@@ -1,0 +1,24 @@
+﻿@model IEnumerable<StudentAzure.Models.Student>
+
+<h1>Student List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
